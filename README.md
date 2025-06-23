@@ -47,4 +47,10 @@ user = "buggex"
 group = "qemu"
 ```
 ## Notes
-* Seams like CPU maybe needs to be host-model instead of host-passthrough (Windows only maybe)
+### Following CPU config, got my 12900K working with "host-passthrough"
+```
+<cpu mode="host-passthrough" check="none" migratable="on">
+  <topology sockets="1" dies="1" clusters="1" cores="4" threads="2"/>
+  <maxphysaddr mode="passthrough" limit="39"/>
+</cpu>
+```
