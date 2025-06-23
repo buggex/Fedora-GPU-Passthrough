@@ -46,3 +46,5 @@ sudo udevadm trigger
 user = "buggex"
 group = "qemu"
 ```
+## Notes
+* Seams like CPU maybe needs to be host-model instead of host-passthrough (Windows only maybe)
